@@ -1,0 +1,226 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 10px 100px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #16fc9f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the right-nav */
+    width: 100%; /* Ensure the navbar takes full width */
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between the ul and the hire-me button */
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Space between each link */
+    padding: 0;
+    margin: 0;
+}
+
+.right-nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+}
+
+.right-nav ul a.active,
+.right-nav ul a:hover {
+    color: #16fc9f;
+}
+
+.right-nav ul a::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    background-color: lightgreen;
+    transition: all .3s;
+}
+
+.right-nav ul a:hover::before,
+.right-nav ul a.active::before {
+    width: 100%;
+}
+
+.hire-me {
+    padding: 10px 20px;
+    background-color: #16fc9f;
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.hire-me:hover {
+    box-shadow: 0 0 5px #16fc9f,
+    0 0 20px #16fc9f, 0 0 20px #16fc9f,
+    0 0 10px #16fc9f, 0 0 10px #16fc9f;
+}
+
+/* About Section */
+.about {
+    padding: 30px 100px 100px 100px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 20px;
+    color: #16fc9f;
+}
+.about-content h1 span {
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    padding: 12px 30px;
+    background-color: #16fc9f;
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn-contact:hover {
+    box-shadow: 0 0 5px #16fc9f,
+    0 0 20px #16fc9f, 0 0 20px #16fc9f,
+    0 0 10px #16fc9f, 0 0 10px #16fc9f;
+}
+
+.about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img {
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Section */
+.skills {
+    padding: 10px 10px;
+    background-color: #111;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-container h2 {
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+}
+
+.skills-container h2 span {
+    color: #16fc9f;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.skill {
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    color: #16fc9f;
+}
+
+.skill i {
+    font-size: 50px;
+    color: #16fc9f;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.skill:hover i {
+    transform: rotate(15deg);
+    color: #fff;
+}
+
+.skill h3 {
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.skill:hover h3 {
+    color: #16fc9f;
+}

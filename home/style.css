@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 10px 100px 10px 100px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #16fc9f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the right-nav */
+    width: 100%;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.right-nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+}
+
+.right-nav ul a.active,
+.right-nav ul a:hover {
+    color: #16fc9f;
+}
+
+.right-nav ul a::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    background-color: lightgreen;
+    transition: all .3s;
+}
+
+.right-nav ul a:hover::before,
+.right-nav ul a.active::before {
+    width: 100%;
+}
+
+.hire-me {
+    padding: 10px 20px;
+    background-color: #16fc9f;
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    border-radius: 20px;
+}
+
+.hire-me:hover {
+    box-shadow: 0 0 5px #16fc9f,
+    0 0 20px #16fc9f, 0 0 20px #16fc9f,
+    0 0 10px #16fc9f, 0 0 10px #16fc9f;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px 10px 120px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #16fc9f;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #999;
+    margin: 10px 0 30px 0;
+}
+
+.download-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.download-cv {
+    background-color: #00FF87;
+    color: #0a0a0a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.download-cv {
+  align-items: center;
+  background-image: linear-gradient(144deg,#00FF87, #16fc9f);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: #00FF87 0 5px 10px 0px;
+  box-sizing: border-box;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  padding: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 24px;
+  min-width: 150px;
+}
+
+.download-cv:hover {
+  outline: 0;
+}
+
+.download-cv span {
+  background-color: #111;
+  color: #fff;
+  padding: 5px 3px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.download-cv:hover span {
+  background: none;
+  color: #000;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    border: 2px solid #00FF87;
+    color: #16fc9f;
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 1s ease;
+}
+
+.social-links a:hover{
+    background: #16fc9f;
+    color:#000;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 400px;
+    border-radius: 50%;
+    border: 4px solid #00FF87;
+    padding: 20px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}

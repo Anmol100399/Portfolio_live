@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 10px 100px 10px 100px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #16fc9f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the right-nav */
+    width: 100%; /* Ensure the navbar takes full width */
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between the ul and the hire-me button */
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Space between each link */
+    padding: 0;
+    margin: 0;
+}
+
+.right-nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+}
+
+.right-nav ul a.active,
+.right-nav ul a:hover {
+    color: #16fc9f;
+}
+
+.right-nav ul a::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    background-color: lightgreen;
+    transition: all .3s;
+}
+
+.right-nav ul a:hover::before,
+.right-nav ul a.active::before {
+    width: 100%;
+}
+
+.hire-me {
+    padding: 10px 20px;
+    background-color: #16fc9f;
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    border-radius: 20px;
+}
+
+.hire-me:hover {
+    box-shadow: 0 0 5px #16fc9f,
+    0 0 20px #16fc9f, 0 0 20px #16fc9f,
+    0 0 10px #16fc9f, 0 0 10px #16fc9f;
+}
+
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px;
+    margin: 0 auto; /* Center the container */
+    justify-content: center;
+}
+
+.service-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.service-number {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    color: #16fc9f;
+}
+
+.service-content h2 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.service-content {
+    padding: 0 9px 0 15px;
+}
+
+.service-content p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.service-arrow {
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service-arrow:hover {
+    transform: scale(1.1) rotate(-30deg);
+    background-color: #1fbf7f;
+    
+}
+
+.fa-arrow-right {
+    color: #fff;
+}
+.service-box.active .service-arrow {
+    background-color: #16fc9f;
+    color: #000;
+}
